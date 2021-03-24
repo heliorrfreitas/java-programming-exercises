@@ -15,8 +15,7 @@ class IsogramChecker {
 
             existingLetters.add(character);
         }
-        String test = phrase.replaceAll("-", "");
-        boolean bool = test.chars().distinct().count() == phrase.length();
+        
         return true;
     }
 
