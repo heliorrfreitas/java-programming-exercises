@@ -67,7 +67,7 @@ public class DartsTest {
 
 
     @Test
-    public void justWithinTheOuterCirlce() {
+    public void justWithinTheOuterCircle() {
         Darts darts = new Darts(-7.0, 7.0);
         assertEquals(1, darts.score());
     }
