@@ -1,15 +1,14 @@
-import java.util.stream.IntStream;
-
 class DifferenceOfSquaresCalculator {
 
-    int computeSquareOfSumTo(int input) {
-        return (int) Math.pow((input * (input + 1))/ 2, 2);
+    int computeSquareOfSumTo(int n) {
+        final int sum = (n * (n + 1))/ 2;
+        return sum * sum;
     }
 
-    int computeSumOfSquaresTo(int input) { return (input * (input + 1) * (2 * input + 1)) / 6; }
+    int computeSumOfSquaresTo(int n) { return (n * (n + 1) * (2 * n + 1)) / 6; }
 
-    int computeDifferenceOfSquares(int input) {
-        return computeSquareOfSumTo(input) - computeSumOfSquaresTo(input);
+    int computeDifferenceOfSquares(int n) {
+        return computeSquareOfSumTo(n) - computeSumOfSquaresTo(n);
     }
 
 }
